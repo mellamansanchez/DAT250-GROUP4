@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<h:head>
+	<title>deviceF</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3>IoTAPP DEVICE FOLLOWED</h3>
+
+      	<h:outputText value="Name: " />
+      	<h:outputText value="#{IoTDeviceController.getDeviceName()}" />
+      	<br /><br />
+
+      	<h:outputText value="URL: " />
+      	<h:outputText value="#{IoTDeviceController.getDeviceUrl()}" />
+      	<br /><br />
+
+      	<h:outputText value="Description: " />
+      	<h:outputText value="#{IoTDeviceController.getDeviceDescription()}" />
+      	<br /><br />      
+      	
+      	<h:outputText value="Status: " />
+      	<h:outputText value="#{IoTDeviceController.getDeviceStatus()}" />
+      	<br /><br />  
+      
+      	<h:outputText value="Categories: " />
+      	<br />
+      	<ui:repeat var="item" value="#{IoTDeviceController.getDeviceCategories()}"> 
+            <br />
+            <h:outputText value="#{item}" />
+       	</ui:repeat>
+       	<br /><br /> 
+       
+       	<h:outputText value="Comments: " />
+       	<br />
+       	<ui:repeat var="item2" value="#{IoTDeviceController.getComments()}"> 
+            <br />      
+            <h:outputText value="#{item2}" />
+       	</ui:repeat>
+       	<br /><br /> 
+       	
+       	<h:outputText value="Average rating: " />
+      	<h:outputText value="#{IoTDeviceController.getAverageRating()}" />
+      	<br /><br />   
+
+      	<h:outputText value="Make a comment: " />
+      	<h:inputText id="comment1" value="#{FeedbackController.comment}"></h:inputText>
+      	<h:commandButton action="#{FeedbackController.createComment()}"
+  			value="Comment"></h:commandButton>
+      	<br /><br />
+
+      	<h:outputText value="Rate from 1 to 5: " />
+      	<h:inputText id="rating1" value="#{FeedbackController.rating}"></h:inputText>
+      	<h:commandButton action="#{FeedbackController.rate()}"
+  			value="Rate"></h:commandButton>
+  			
+  		<br /><br />
+		<br /><br />
+		
+		<h:commandButton action="#{sessionController.goToMainScreen()}"
+			value="Go back to MainScreen"></h:commandButton>
+			
+		<h:commandButton action="#{userController.unfollow()}"
+			value="Unfollow device"></h:commandButton>
+
+	</h:form>
+</h:body>
+</html>

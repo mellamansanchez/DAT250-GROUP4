@@ -1,0 +1,14 @@
+rest/IoTDeviceService.class
+entities/System$1.class
+entities/Comment.class
+ejb/FeedbackDao.class
+entities/System$2.class
+entities/System.class
+ejb/UserDao.class
+entities/Feedback.class
+entities/Status.class
+ejb/DatabaseTestData.class
+ejb/IoTDeviceDao.class
+entities/User.class
+entities/Rating.class
+entities/IoTDevice.class

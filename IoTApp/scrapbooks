@@ -1,0 +1,20 @@
+drop table categories;
+drop table devicesfollowed;
+drop table devicesowned;
+drop table iotdevice_feedback;
+drop table requestedfollows;
+drop table sequence;
+drop table feedback;
+drop table iotdevice;
+drop table appuser;
+drop table usergroupusers;
+drop table usergroups;
+drop table appuser;
+
+insert into APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (0, 'Bob', 'bob@example.com', 'hunter2')
+insert into APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (1, 'Anna', 'anna@example.com', 'qwerty123')
+insert into ADMIN.APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (2, 'Cody', 'cody@example.com', 'password1')
+insert into IOTDEVICE (ID, NAME_DEV, URL, PICTURE, DESCRIPTION) values (0, 'Garage lights', 'https://example.com/device/garage/', '/dev/bob/glights.jpg', 'The lights in my garage, thought it would be funny to put this up here')
+insert into IOTDEVICE (ID, NAME_DEV, URL, PICTURE, DESCRIPTION) values (1, 'Window wipers', 'https://example.com/device/winwipe/', '/dev/bob/mywindow.jpg', 'It wipes my windows')
+insert into DEVICESOWNED (ID_DEVICE, id_name ) values(1, 1)
+

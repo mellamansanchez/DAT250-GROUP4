@@ -1,0 +1,6 @@
+insert into APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (0, 'Bob', 'bob@example.com', 'hunter2')
+insert into APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (1, 'Anna', 'anna@example.com', 'qwerty123')
+insert into ADMIN.APPUSER (ID, USERNAME, EMAIL, PASSWORD) values (2, 'Cody', 'cody@example.com', 'password1')
+insert into IOTDEVICE (ID, NAME, URL, PICTURE, DESCRIPTION) values (0, 'Garage lights', 'https://example.com/device/garage/', '/dev/bob/glights.jpg', 'The lights in my garage, thought it would be funny to put this up here')
+insert into IOTDEVICE (ID, NAME, URL, PICTURE, DESCRIPTION) values (1, 'Window wipers', 'https://example.com/device/winwipe/', '/dev/bob/mywindow.jpg', 'It wipes my windows')
+insert into DEVICESOWNED (ID_DEVICE, ID_APPUSER ) values(0, 0)

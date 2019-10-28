@@ -1,0 +1,12 @@
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/System.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/Comment.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/User.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/ejb/UserDao.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/ejb/FeedbackDao.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/ejb/IoTDeviceDao.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/IoTDevice.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/rest/IoTDeviceService.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/Status.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/Rating.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/entities/Feedback.java
+/home/alvarosanchez/eclipse-workspace/IoTApp/src/main/java/ejb/DatabaseTestData.java
